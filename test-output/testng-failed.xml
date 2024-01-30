@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.Analytics_Jobs.Job1">
+      <class name="com.test.Analytics_Jobs.Jenkinid">
         <methods>
-          <include name="code"/>
-          <include name="setup"/>
           <include name="close"/>
+          <include name="jobs"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.test.Analytics_Jobs.Job1 -->
+      </class> <!-- com.test.Analytics_Jobs.Jenkinid -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
