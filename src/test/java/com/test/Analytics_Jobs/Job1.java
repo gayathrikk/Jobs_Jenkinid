@@ -29,12 +29,12 @@ public class Job1 {
 	        driver = new RemoteWebDriver(url, dc);
 	        
 	    }
-	    
+	 @Parameters("URL")
 	    @Test(priority = 1)
-	    public void login() throws InterruptedException
+	    public void login(@Optional("defaultURL") String URL) throws InterruptedException
 	    {
 
-	    	driver.get("http://dev2mani.humanbrain.in/annotation/portal");
+	    	driver.get(URL);
 	        driver.manage().window().maximize();
 	    }
 	    @Test(priority=2)
